@@ -1,0 +1,17 @@
+
+<!-- saved from url=(0092)https://www.pythonanywhere.com/user/Cynonym/files/home/Cynonym/mysite/templates/_macros.html -->
+<html><script>(function(){var PluginArray=function(plugins){var last=plugins.length;for(var i=0;i<last;i++){this[i]=this[plugins[i].name]=plugins[i];}var Plugin=function(prop){for(var i in prop){this[i]=prop[i];}};Plugin.prototype.item=function(){};Plugin.prototype.namedItem=function(){};var dummy=new Plugin({description:"DjVu Viewer Extension for Google Chrome",filename:"djvu.js",name:"DjVu Viewer Extension",version:"",});this[last]=this[dummy.name]=dummy;Object.defineProperty(this,"length",{get:function(){return last+1}});};PluginArray.prototype.item=function(index){return this[index];};PluginArray.prototype.namedItem=function(name){for(var i=0;i<this.length;i++){if(this[i].name===name){return this[i];}}};PluginArray.prototype.refresh=function(){};var plugins=new PluginArray(navigator.plugins);Object.defineProperty(navigator,"plugins",{get:function(){return plugins}});})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>{% macro pagination_widget(pages, endpoint) %}
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        {% for p in pages %}
+        <li class="page-item {{p[&#39;class&#39;]}}">
+            <a href="https://www.pythonanywhere.com/user/Cynonym/files/home/Cynonym/mysite/templates/%7B%7B%20url_for(endpoint,%20page%20=%20p[&#39;href&#39;],%20**kwargs)%20%7D%7D" class="page-link" aria-label="{{p[&#39;page&#39;]}}">
+                <span aria-hidden="true">{{p['page_label'] | safe}}</span>
+                <span class="sr-only">{{p['page_label'] | safe}}</span>
+
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+{% endmacro %}<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style></body></html>

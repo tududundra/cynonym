@@ -1,4 +1,4 @@
 # cynonym
-Словарь синонимов для студентов изучающих русский как иностранный.
+Group project of the dictionary of synonyms for students studying Russian as a foreign language.
 
-Группа: Ася Симонян, Саша Дахина (Матвеева), Дима Татаринов
+The authors: Asya Simonyan, Alexandra Dahina, Dmitry Tatarinov.
